@@ -16,9 +16,16 @@ can be found in the LICENSE file at http://angular.io/license
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
-  <button (click)="share()">
-    Share
-  </button>
+  <p>
+    <button (click)="share()">
+      Share
+    </button>
+  </p>
+  <p>
+    <button (click)="askOliver()">
+      Ask Oliver!
+    </button>
+  </p>
   <app-product-alerts
     [product]="product"
     (notify)="onNotify()">

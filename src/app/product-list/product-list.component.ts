@@ -13,8 +13,8 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
-  askOliver {
-    window.alert('Everything okay?')
+  askOliver() {
+    window.alert('Everything okay?');
   }
   onNotify(){
     window.alert('The user has been notified!');
