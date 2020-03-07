@@ -21,9 +21,14 @@ can be found in the LICENSE file at http://angular.io/license
       Share
     </button>
   </p>
-  <p>
+  <p *ngIf="product.price > 500">
     <button (click)="askOliver()">
       Ask Oliver!
+    </button>
+  </p>
+  <p *ngIf="product.price <= 700">
+    <button (click)="askOliver()">
+      Ask Monika!
     </button>
   </p>
   <app-product-alerts
